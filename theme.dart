@@ -1,27 +1,20 @@
 import 'package:flutter/material.dart';
 
 final ThemeData myTheme = ThemeData(
-  brightness: Brightness.light,
-  primaryColor: const Color(0xff009688),
-  primaryColorLight: const Color(0xffb2dfdb),
-  primaryColorDark: const Color(0xff00796b),
-  canvasColor: const Color(0xfffafafa),
-  scaffoldBackgroundColor: const Color(0xfffafafa),
-  bottomAppBarColor: const Color(0xffffffff),
-  cardColor: const Color(0xffffffff),
-  dividerColor: const Color(0x1f000000),
-  highlightColor: const Color(0x66bcbcbc),
-  splashColor: const Color(0x66c8c8c8),
-  selectedRowColor: const Color(0xfff5f5f5),
-  unselectedWidgetColor: const Color(0x8a000000),
-  disabledColor: const Color(0x61000000),
-  toggleableActiveColor: const Color(0xff00897b),
-  secondaryHeaderColor: const Color(0xffe0f2f1),
-  backgroundColor: const Color(0xff80cbc4),
-  dialogBackgroundColor: const Color(0xffffffff),
-  indicatorColor: const Color(0xff009688),
-  hintColor: const Color(0x8a000000),
-  errorColor: const Color(0xffd32f2f),
+
+  colorScheme: const ColorScheme(
+    brightness: Brightness.dark,
+    primary: Colors.green,
+    onPrimary: Colors.greenAccent,
+    secondary: Colors.blue,
+    onSecondary: Colors.blueAccent,
+    error: Colors.red,
+    onError: Colors.redAccent,
+    background: Colors.white,
+    onBackground: Colors.white30,
+    surface: Colors.black,
+    onSurface: Colors.black38,
+  ),
   buttonTheme: const ButtonThemeData(
     textTheme: ButtonTextTheme.normal,
     minWidth: 88,
@@ -319,8 +312,5 @@ final ThemeData myTheme = ThemeData(
       style: BorderStyle.none,
     ),
     borderRadius: BorderRadius.all(Radius.circular(0.0)),
-  )),
-  colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.teal).copyWith(
-    secondary: const Color(0xff009688),
-  ),
+  ),),
 );
